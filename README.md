@@ -29,7 +29,7 @@ Usage : To initiate our library, place the below code at initial activity of you
 
 CentreApp.initialize(context, "YOUR_API_KEY",  "USER_GOOGLE_ADVERTISER_ID");
 
-        CentreApp.start("testing transaction");
+        CentreApp.start("transaction_name");
         
         CentreApp.addTrait("string", "name", "myname");
         
@@ -42,6 +42,7 @@ CentreApp.initialize(context, "YOUR_API_KEY",  "USER_GOOGLE_ADVERTISER_ID");
 context -> your application context
 YOUR_API_KEY -> your registered application API key from http://way2online.audienceplay.com/
 USER_GOOGLE_ADVERTISER_ID -> it is the google advertiserId from the mobile.
+transaction_name -> name of thetransaction.
 ```
 implement CentreCallbacks in the same Activity where you are calling above initialize() method, so that Callback methods will be overriden and you can redirect the user accourdingly with success, failure functions accordingly.
 
